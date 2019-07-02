@@ -3,10 +3,13 @@ import React from 'react';
 import TodoListItem from './todo-list-item';
 
 const TodoList = () => {
+    // important === important={true}
     return (
         <ul>
-            <li><TodoListItem /></li>
-            <li><TodoListItem /></li>
+            <li><TodoListItem label="Drink Coffee" /></li>
+            <li><TodoListItem
+                label="Build React App"
+                important /></li>
         </ul>
     );
 };
